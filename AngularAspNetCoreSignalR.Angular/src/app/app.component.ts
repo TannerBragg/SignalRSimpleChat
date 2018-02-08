@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.nick = window.prompt('Your name:', 'John');
 
-    this._hubConnection = new HubConnection('http://localhost:5000/chat');
+    this._hubConnection = new HubConnection('http://localhost:56422/chat');
 
     this._hubConnection
       .start()
